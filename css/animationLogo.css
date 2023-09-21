@@ -1,0 +1,31 @@
+ /* The animation code */
+
+@keyframes customAnimation {
+  0%{background-color: grey; left: 0px; top: 0px;transform: translateX(0);filter: grayscale(0%)}
+  50%{border-radius: 60% ; left: 0px; top: 200px;filter: grayscale(50%);}
+  100%{background-color: whitesmoke; left: 0px; top: 0px;transform: translateX(100%);filter: grayscale(0);}
+}
+
+/*.animated-image{
+  background-color:black;
+}
+
+/* The element to apply the animation to */
+.animated-image {
+  width: 90px;
+  height: auto;
+  position: relative;
+  transition: 7s;
+  background-color: grey;
+  animation: slide 7s infinite alternate;
+  animation-name: customAnimation;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate-reverse;
+}    
+
+.animated-image:hover{
+  animation-play-state: running;
+}
+
